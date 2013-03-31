@@ -1,0 +1,26 @@
+{
+  "UserProfileResponse": {
+    "User_Profile": [
+      {
+        "Name": "Palanisamy Ramamoorthy",
+        "Created_TS": "2013-03-25T08:30:57.000-04:00",
+        "Relationship_Status": "married",
+        "Lives_in": "Malvern, PA",
+        "Email_ID": "rpalanisamy@yahoo.com",
+        "Profile_ID": 101,
+        "Sex": "male",
+        "Languages": "English, Hindi, Tamil"
+      },
+      {
+        "Name": "Brian Charles",
+        "Created_TS": "2013-03-25T20:46:59.000-04:00",
+        "Relationship_Status": "Single",
+        "Lives_in": "Orlando, FL",
+        "Email_ID": "praharam@gmail.com",
+        "Profile_ID": 102,
+        "Sex": "male",
+        "Languages": "Spanish, English"
+      }
+    ]
+  }
+}
