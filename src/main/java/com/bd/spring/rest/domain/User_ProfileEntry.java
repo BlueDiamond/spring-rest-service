@@ -2,6 +2,11 @@ package com.bd.spring.rest.domain;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * @author palani
+ * converting from object to json will make duplicate json result when we have the getters and setters along with @JsonProperty
+ * removing setters and getters fixed the issue
+ */
 public class User_ProfileEntry {
 	@JsonProperty("Name")
 	private String Name;

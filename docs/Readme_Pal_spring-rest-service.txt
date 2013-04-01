@@ -1,17 +1,21 @@
 
 
+
+rest service URL to access: tomcat
+http://localhost:8080/spring-rest-service/rest/userprofiles
+
+jboss:
+http://localhost:9090/spring-rest-service/rest/userprofiles
+ 
+ -----------------------------------------------------------------------------------------------------------------------------------------------------
 json to pojo:
 https://github.com/astav/JsonToJava.git
 
-
 https://github.com/wotifgroup/json2pojo.git
-
-
 ----
 docs:
 
 https://github.com/astav/JsonToJava/wiki/JsonToJava
-
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 main function to be used inside com.astav.jsontojava.JsonToJava:
 
@@ -45,9 +49,6 @@ main function to be used inside com.astav.jsontojava.JsonToJava:
     }
     
  -----------------------------------------------------------------------------------------------------------------------------------------------------
- rest service URL to access:
- http://localhost:8080/spring-rest-service/rest/userprofiles
- 
- -----------------------------------------------------------------------------------------------------------------------------------------------------
+
  
  
