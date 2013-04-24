@@ -5,7 +5,13 @@ rest service URL to access: tomcat
 http://localhost:8080/spring-rest-service/rest/userprofiles
 
 jboss:
+get all user profiles:
 http://localhost:9090/spring-rest-service/rest/userprofiles
+
+create a new user profile: - post
+http://localhost:9090/spring-rest-service/rest/createuserprofile
+
+
  
  -----------------------------------------------------------------------------------------------------------------------------------------------------
 json to pojo:

@@ -3,9 +3,10 @@ package com.bd.spring.rest.domain;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
- * @author palani
- * converting from object to json will make duplicate json result when we have the getters and setters along with @JsonProperty
- * removing setters and getters fixed the issue
+ * @author palani converting from object to json will make duplicate json result when we have the getters and setters along with @JsonProperty removing setters
+ *         and getters fixed the issue.
+ * 
+ *         but without getters and setters using it inside @RequestBody object fails with 400 bad request.. need to have getters and setters to fix this issue
  */
 public class User_ProfileEntry {
 	@JsonProperty("Name")
@@ -31,16 +32,84 @@ public class User_ProfileEntry {
 				+ ", Email_ID=" + Email_ID + ", Profile_ID=" + Profile_ID + ", Sex=" + Sex + ", Languages=" + Languages + "]";
 	}
 
-	public User_ProfileEntry(String name, String created_TS, String relationship_Status, String lives_in, String email_ID, Integer profile_ID, String sex,
-			String languages) {
-		super();
+	public User_ProfileEntry() {
+
+	}
+
+	// public User_ProfileEntry(String name, String created_TS, String relationship_Status, String lives_in, String email_ID, Integer profile_ID, String sex,
+	// String languages) {
+	// super();
+	// Name = name;
+	// Created_TS = created_TS;
+	// Relationship_Status = relationship_Status;
+	// Lives_in = lives_in;
+	// Email_ID = email_ID;
+	// Profile_ID = profile_ID;
+	// Sex = sex;
+	// Languages = languages;
+	// }
+
+	public String getName() {
+		return Name;
+	}
+
+	public void setName(String name) {
 		Name = name;
+	}
+
+	public String getCreated_TS() {
+		return Created_TS;
+	}
+
+	public void setCreated_TS(String created_TS) {
 		Created_TS = created_TS;
+	}
+
+	public String getRelationship_Status() {
+		return Relationship_Status;
+	}
+
+	public void setRelationship_Status(String relationship_Status) {
 		Relationship_Status = relationship_Status;
+	}
+
+	public String getLives_in() {
+		return Lives_in;
+	}
+
+	public void setLives_in(String lives_in) {
 		Lives_in = lives_in;
+	}
+
+	public String getEmail_ID() {
+		return Email_ID;
+	}
+
+	public void setEmail_ID(String email_ID) {
 		Email_ID = email_ID;
+	}
+
+	public Integer getProfile_ID() {
+		return Profile_ID;
+	}
+
+	public void setProfile_ID(Integer profile_ID) {
 		Profile_ID = profile_ID;
+	}
+
+	public String getSex() {
+		return Sex;
+	}
+
+	public void setSex(String sex) {
 		Sex = sex;
+	}
+
+	public String getLanguages() {
+		return Languages;
+	}
+
+	public void setLanguages(String languages) {
 		Languages = languages;
 	}
 
