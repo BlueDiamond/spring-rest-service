@@ -1,19 +1,34 @@
 
 
 
-rest service URL to access: tomcat
-http://localhost:8080/spring-rest-service/rest/userprofiles
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 jboss:
-get all user profiles:
+get all user profiles: get
 http://localhost:9090/spring-rest-service/rest/userprofiles
-
+---
 create a new user profile: - post
 http://localhost:9090/spring-rest-service/rest/createuserprofile
 
+header:
+Content-Type=application/json
 
- 
- -----------------------------------------------------------------------------------------------------------------------------------------------------
+request body:
+{
+    "Name": "Tom Cruze",
+    "Relationship_Status": "un-married",
+    "Lives_in": "Sandiego",
+    "Email_ID": "tom@greatguy.com",
+    "Profile_ID": "120",
+    "Sex": "male",
+    "Languages": "English, Spanish",
+}
+
+---
+in tomcat:
+rest service URL to access: tomcat
+http://localhost:8080/spring-rest-service/rest/userprofiles
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 json to pojo:
 https://github.com/astav/JsonToJava.git
 
